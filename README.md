@@ -50,7 +50,7 @@ pip install -r requirements.txt
 streamlit run Home.py
 ```
 
-## If not run and your facing the issues then, try the follwoing commands:
+## If not run and your facing the issues then, try the follwoing commands :
 
 ```
 chmod +x setup.sh
