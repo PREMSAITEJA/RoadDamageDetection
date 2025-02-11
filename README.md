@@ -3,14 +3,17 @@
 This project is road damage detection applications that designed to enhance road safety and infrastructure maintenance by swiftly identifying and categorizing various forms of road damage, such as potholes and cracks.
 
 ## Performing Detection Using Image
+
 ![Detection using image](resource/RDD_Image_Example.gif)
 
 ## Performing Detection Using Video
+
 ![Detection using video](resource/RDD_Video_Example.gif)
 
 The project is powered by YOLOv8 deep learning model that trained on Crowdsensing-based Road Damage Detection Challenge 2022 dataset.
 
 There is four types of damage that this model can detects such as:
+
 - Longitudinal Crack
 - Transverse Crack
 - Alligator Crack
@@ -20,7 +23,7 @@ There is four types of damage that this model can detects such as:
 
 This is the step that you take to install and run the web-application on the local server.
 
-``` bash
+```bash
 # Install CUDA if available
 # https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 
@@ -47,17 +50,25 @@ pip install -r requirements.txt
 streamlit run Home.py
 ```
 
+## If not run and your facing the issues then, try the follwoing commands:
+
+```
+chmod +x setup.sh
+
+./setup.sh
+```
+
 ## Web Demo
 
 ### [🎈Webserver Online Demo](https://roaddamagedetection.streamlit.app/)
-    
+
     You can access the webserver demo on the streamlit cloud. But due to hardware limitations, some functions may not be working as intended. Such as, the realtime detection cannot capture the webcam input and slow inference on video detection.
 
 ## Training
 
 ### Prepare the Dataset
 
-Download the datasets from this [github](https://github.com/sekilab/RoadDamageDetector) and you can extract the *RDD2022.zip* files into this structure.
+Download the datasets from this [github](https://github.com/sekilab/RoadDamageDetector) and you can extract the _RDD2022.zip_ files into this structure.
 
 ```
 /home/oracl4/project/rdd/dataset/RDD2022/
@@ -114,8 +125,10 @@ This is the training result of the YOLOv8s model that trained on the filtered Ja
 </p>
 
 ## License and Citations
+
 - Road Damage Dataset from Crowdsensing-based Road Damage Detection Challenge (CRDDC2022)
 - All rights reserved on YOLOv8 license permits by [Ultralytics](https://github.com/ultralytics/ultralytics) and [Streamlit](https://streamlit.io/) framework
 
 ---
+
 This project is created for the [Road Damage Detection Challenge](https://s.id/RDDHariJalan23) by [Ministry of Public Works and Housing](https://pu.go.id/) for celebrating the "Peringatan Hari Jalan 2023"
